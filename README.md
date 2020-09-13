@@ -1,2 +1,2 @@
 # developperSquad
-Community developpers
+Searching team or developpers for projects
