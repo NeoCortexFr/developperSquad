@@ -7,10 +7,114 @@ body
 {
     background-color: grey;
     border-radius: 25px;
-    width: 1000px;
+    width: 1200px;
     margin: auto;
 }
 
+.text-effect
+{
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    -webkit-filter: contrast(110%) brightness(190%);
+            filter: contrast(110%) brightness(190%);
+}
+
+.neon
+{
+    position: relative;
+    background: black;
+    color: transparent;
+}
+
+.neon::before, .neon::after
+{
+    content: attr(data-text);
+    color: white;
+    -webkit-filter: blur(0.02em);
+            filter: blur(0.02em);
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.neon::after
+{
+    mix-blend-mode: difference;
+}
+
+.gradient, .spotlight
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.gradient
+{
+    background: linear-gradient(45deg, red, blue);
+    mix-blend-mode: multiply;
+}
+
+.spotlight
+{
+    -webkit-animation: light 5s infinite linear;
+            animation: light 5s infinite linear;
+    background: radial-gradient(circle, white, transparent 25%)
+    0 0/25% 25%, 
+                radial-gradient(circle, white, black 25%)
+    50% 50%/12.5% 12.5%;
+    top: -100%;
+    left: -100%;
+    mix-blend-mode: color-dodge;
+}
+
+@-webkit-keyframes light 
+{
+    100% {
+        -webkit-transform: translate3d(50%, 50%, 0);
+                transform: translate3d(50%, 50%, 0);
+    }
+}
+
+@keyframes light 
+{
+    100% {
+        -webkit-transform: translate3d(50%, 50%, 0);
+                transform: translate3d(50%, 50%, 0);
+    }
+}
+
+.neon
+{
+    font: 800 80px 'lato', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.neon:focus 
+{
+    outline: none;
+    border: 1px dotted white;
+}
+
+.body 
+{
+    background: black;
+    display: -webkit-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/*
 h1
 {
     text-align: center;
@@ -19,7 +123,7 @@ h1
     font-weight: bold;
     margin: 16px 0;
 }
-
+*/
 h2 
 {
     text-align: center;
@@ -51,3 +155,50 @@ nav a:hover
     color: blue;
 }
 
+.container 
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+}
+
+.container img 
+{
+    
+    box-shadow: 5px 2px 2px blue;
+    margin: 12px;
+}
+.container img:hover
+{
+    width: 505px;
+    box-shadow: none;
+    border: none;
+    border: 1px black solid;
+}
+
+.article 
+{
+    display: flex;
+}
+
+.article p 
+{
+    margin: 30px 12px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+h3 
+{
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    color: blue;
+    text-decoration: underline;
+}
+
+ul li
+{
+    text-align: center;
+    font-size: 1.2em;
+}
