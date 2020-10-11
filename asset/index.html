@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <div class="body">
     <div class="text-effect">
         <h1 class="neon" data-text="Developer'Squad">Developer'Squad</h1>
@@ -18,50 +19,82 @@
         <div class="spotlight"></div>
     </div>
     </div>
+<div id="app" class="app">
     <div class="content">
         <header>
             <h2>Montez une équipe de développeurs !</h2>
             <nav>
-                <a href="#">Web</a>
-                <a href="#">Appli Mobile</a>
-                <a href="#">Logiciel</a>
-                <a href="theDevRepublic.html">The Dev'Republic</a>
-                <a href="https://www.french.dev/a-propos">French.Dev</a>
+                <a href="https://www.french.dev/a-propos">{{ frenchDev }}</a>
+                <a href="#">{{ web }}</a>
+                <a href="#">{{ appli }}</a>
+                <a href="#">{{ logiciel }}</a>
+               
+               
             </nav>
         </header>
         <main>
             <section class="container">
                 <div class="hover_box">
-                    <img src="../img/web.jpg" width="1200px" alt="Mountains" class="hover_box-layer_bottom">
+                    <img src="../img/frenchdev.png" width="600px"  alt="Mountains" class="hover_box-layer_bottom">
                     <div class="hover_box-layer_top hover_box-layer_scale">
                         <div class="hover_box-text">
-                            <a href="squad_hover.html">Team WEB</a>
-                            <h3>Les Squad du développement Web</h3>
+                            <a href="https://www.french.dev/a-propos">Team JOB</a>
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container_text">
+                <h3>{{ frenchDev }}</h3>La France a DES incroyables talents ✨
+                    <p>Le marché de l'emploi des développeurs est atypique, tout comme vous l'êtes. 
+                        C'est pourquoi nous croyons qu'il est essentiel de mettre les développeurs au centre de l'attention: 
+                        C'est la raison d'être de French.dev
+                    </p>
+            </section>
+            <section class="container_text">
+                <h3>Les Squad du développement {{ web }}</h3>
                             <p>| HTML | CSS | PHP | JavaScript | Sql | ... |</p>
+            </section>
+
+            <section class="container">
+                <div class="hover_box">
+                    <img src="../img/web.jpg" width="600px"  alt="Mountains" class="hover_box-layer_bottom">
+                    <div class="hover_box-layer_top hover_box-layer_scale">
+                        <div class="hover_box-text">
+                            <a href="squad_web.html">Team {{ web }}</a>
+                            
                         </div>
                     </div>
                 </div>
             </section>
             <section class="container">
                 <div class="hover_box">
-                    <img src="../img/mobile-dev.png" width="1200px" alt="Mountains" class="hover_box-layer_bottom">
+                    <img src="../img/mobile-dev.png" width="600px"  alt="Mountains" class="hover_box-layer_bottom">
                     <div class="hover_box-layer_top hover_box-layer_scale">
                         <div class="hover_box-text">
-                            <a href="squad_hover.html">Team APPLICATION</a>
+                            <a href="squad_appli.html">Team {{ appli }}</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container_text">
+                <a href="squad_appli.html">Team {{ appli }}</a>
                             <h3>Les Squad du développement d'Appli</h3>
                             <p>| Kotlin | ANDROID STUDIO | SWIFT | PWA | ... |</p>
-                        </div>
-                    </div>
-                </div>
+            </section>
+            <section class="container_text">
+                <a href="squad_logiciel.html">Team {{ logiciel }}</a>
+                            <h3>Les Squad du développement de {{ logiciel }}</h3>
+                            <p>| C++ | PHYTON | JAVA | LUA | ... |</p>
             </section>
             <section class="container">
                 <div class="hover_box">
-                    <img src="../img/logiciel.jpg" width="1200px" alt="Mountains" class="hover_box-layer_bottom">
+                    <img src="../img/logiciel.jpg" width="600px"  alt="Mountains" class="hover_box-layer_bottom">
                     <div class="hover_box-layer_top hover_box-layer_scale">
                         <div class="hover_box-text">
-                            <a href="squad_hover.html">Team LOGICIEL</a>
-                            <h3>Les Squad du développement de Logiciel</h3>
-                            <p>| C++ | PHYTON | JAVA | LUA | ... |</p>
+                           
                         </div>
                     </div>
                 </div>
@@ -75,6 +108,9 @@
 
         </footer>
     </div>
+</div>  <!-- /div de #app -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="../js/vueJs.js"></script>
 </body>
 
 </html>

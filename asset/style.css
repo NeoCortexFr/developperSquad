@@ -7,7 +7,7 @@ body
 {
     background-color: grey;
     border-radius: 25px;
-    width: 1200px;
+    width: 100%;
     margin: auto;
 }
 
@@ -48,11 +48,31 @@ nav a:hover
     margin: 15px;
 }
 
-h3, .hover_box-text
+.hover_box-text
 {
-    color: red;
+   
     font-weight: bold;
     background-color: black;
     border-radius: 15px;
     padding: 5px;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section p 
+{
+    width: 40%;
+}
+
+.container_text
+{
+    width: 600px;
+    border: blue 4px solid;
+    text-align: center;
+    color: #ff00ff;
 }
