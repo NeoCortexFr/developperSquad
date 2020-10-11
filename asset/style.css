@@ -1,13 +1,14 @@
 body
 {
     background-color: black;
+
 }
 
 .content
 {
     background-color: grey;
     border-radius: 25px;
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 
@@ -33,6 +34,7 @@ nav a
     font-size: 1.2rem;
     text-decoration: none;
     background-color: black;
+    border-radius: 15px;
     color: white;
     margin-bottom: 16px;
     padding: 12px;
@@ -64,15 +66,63 @@ main
     flex-wrap: wrap;
 }
 
-section p 
-{
-    width: 40%;
-}
-
 .container_text
 {
     width: 600px;
-    border: blue 4px solid;
+    
     text-align: center;
-    color: #ff00ff;
+    padding: 20px;    
+}
+
+h3
+{
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 16px;
+}
+
+h4
+{
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    color: blue;
+}
+
+.container_text p
+{
+    text-align: left;
+}
+
+.container_text, .container
+{
+    margin-bottom: 200px;
+}
+
+footer
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+
+footer h4
+{
+    padding: 0, 30px 0 16px;
+}
+
+footer span
+{
+    font-size: 1.5em;
+}
+
+footer ul
+{
+    padding-right: 20px;
+}
+
+li
+{
+    font-size: 1.6em;
 }

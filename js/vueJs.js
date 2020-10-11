@@ -6,6 +6,8 @@ const app = new Vue ({
         appli: "Appli Mobile",
         logiciel: "Logiciel",
         ia: "Intelligence Artificielle",
-        robot: "Robotique"
+        robot: "Robotique",
+        dom: "Domotique",
+        duino: "Arduino",
     },
 })

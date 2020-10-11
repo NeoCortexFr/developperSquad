@@ -46,7 +46,8 @@
                 </div>
             </section>
             <section class="container_text">
-                <h3>{{ frenchDev }}</h3>La France a DES incroyables talents ✨
+                <h3>{{ frenchDev }}</h3>
+                    <h4>La France a DES incroyables talents ✨</h4>
                     <p>Le marché de l'emploi des développeurs est atypique, tout comme vous l'êtes. 
                         C'est pourquoi nous croyons qu'il est essentiel de mettre les développeurs au centre de l'attention: 
                         C'est la raison d'être de French.dev
@@ -94,18 +95,28 @@
                     <img src="../img/logiciel.jpg" width="600px"  alt="Mountains" class="hover_box-layer_bottom">
                     <div class="hover_box-layer_top hover_box-layer_scale">
                         <div class="hover_box-text">
-                           
+                            <a href="squad_appli.html">Team {{ logiciel }}</a>
                         </div>
                     </div>
                 </div>
             </section>
+          
         </main>
         <aside>
             <!--  ASIDE :  <a href="others_squad.html">Autres</a>   IA, Robotique Domotique Arduino -->
         </aside>
 
         <footer>
-
+            <h4>Hey, partez pas si vite ! On a d'autres choses sous le coude: </h4>
+                <p>
+                    <span>  Que diriez vous de causer un peu de .....</span>
+                </p>
+                <ul>
+                    <li><img src="../img/fleche-droite.jpg" width="30px" alt="fleche droite"><a href="squad_robot.html">{{ robot }}</a></li>
+                    <li><img src="../img/fleche-droite.jpg" width="30px" alt="fleche droite"><a href="squad_ia.html">{{ ia }}</a></li>
+                    <li><img src="../img/fleche-droite.jpg" width="30px" alt="fleche droite"><a href="squad_dom.html">{{ dom }}</a></li>
+                    <li><img src="../img/fleche-droite.jpg" width="30px" alt="fleche droite"><a href="squad_arduino.html">{{ duino }}</a></li>
+                </ul>
         </footer>
     </div>
 </div>  <!-- /div de #app -->
