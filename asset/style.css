@@ -107,6 +107,13 @@ h4
 
 .container_text p
 {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.tech
+{
     text-align: left;
 }
 
