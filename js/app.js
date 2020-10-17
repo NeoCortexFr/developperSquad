@@ -15,17 +15,64 @@ let app = {
 
     handleClickFront: function(event)
     {
-        console.log("front-end");
+        event.preventDefault();
+        //  console.log("front-end");
+        let template = document.getElementById('frontend');
+        let article = document.getElementById('article');
+        let test = document.querySelector('#article .emptyTest');
+          console.log(test);
+        //  console.log("article = ", article);
+        //  test condition:
+        if (test == null) {
+        //  if (article.content == '') {
+        //  clone
+        let clone = document.importNode(template.content, true);
+        article.appendChild(clone);
+        } else {
+            alert("Vous y êtes déjà !");
+        }
     },
 
     handleClickBack: function(event)
     {
         console.log("back-end");
+        event.preventDefault();
+        //  console.log("front-end");
+        let template = document.getElementById('backend');
+        let article = document.getElementById('articleTwo');
+        let test = document.querySelector('#articleTwo .emptyTest');
+          console.log(test);
+        //  console.log("article = ", article);
+        //  test condition:
+        if (test == null) {
+        //  if (article.content == '') {
+        //  clone
+        let clone = document.importNode(template.content, true);
+        article.appendChild(clone);
+        } else {
+            alert("Vous y êtes déjà !");
+        }
     },
 
     handleClickDatabase: function(event)
     {
         console.log("sql");
+        event.preventDefault();
+        //  console.log("front-end");
+        let template = document.getElementById('database');
+        let article = document.getElementById('articleThree');
+        let test = document.querySelector('#articleThree .emptyTest');
+          console.log(test);
+        //  console.log("article = ", article);
+        //  test condition:
+        if (test == null) {
+        //  if (article.content == '') {
+        //  clone
+        let clone = document.importNode(template.content, true);
+        article.appendChild(clone);
+        } else {
+            alert("Vous y êtes déjà !");
+        }
     }
 
 };
