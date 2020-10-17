@@ -42,11 +42,9 @@ let app = {
         let article = document.getElementById('articleTwo');
         let test = document.querySelector('#articleTwo .emptyTest');
           console.log(test);
-        //  console.log("article = ", article);
-        //  test condition:
+       
         if (test == null) {
-        //  if (article.content == '') {
-        //  clone
+       
         let clone = document.importNode(template.content, true);
         article.appendChild(clone);
         } else {
@@ -63,11 +61,9 @@ let app = {
         let article = document.getElementById('articleThree');
         let test = document.querySelector('#articleThree .emptyTest');
           console.log(test);
-        //  console.log("article = ", article);
-        //  test condition:
+       
         if (test == null) {
-        //  if (article.content == '') {
-        //  clone
+       
         let clone = document.importNode(template.content, true);
         article.appendChild(clone);
         } else {
