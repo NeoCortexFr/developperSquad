@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/effect.css">
+    <title>Developper'Squad</title>
+</head>
+
+<body>
+
+    <div class="body">
+        <div class="text-effect">
+            <h1 class="neon" data-text="Developer'Squad">Developer'Squad</h1>
+            <div class="gradient"></div>
+            <div class="spotlight"></div>
+        </div>
+    </div>
+    <div class="content">
+        <header>
+            <h2>Montez une équipe de développeurs !</h2>
+            <nav> 
+                <a href="index.html">Accueil</a>
+                <a href="https://www.french.dev/a-propos"> frenchDev </a>
+                <a href="#"> appli </a>
+                <a href="#"> logiciel </a>
+               
+            </nav>
+        </header>
+        <main class="mainWeb">
+            <h3>Bienvenue dans le monde du Web :</h3>
+            <section class="sectionWeb">
+                <button id="front">Partie FRONT-END</button>
+                <button id="back">Partie BACK-END</button>
+                <button id="bdd">Partie DataBase</button>
+            </section>
+            <article id="article">
+
+            </article>
+            <article id="articleTwo">
+
+            </article>
+            <article id="articleThree">
+
+            </article>
+        </main>
+        <template id="frontend">
+            <div class="emptyTest">
+           <h4>FRONT-END</h4>
+           <p>
+               Tout ce qui concerne le dév front.
+               Vous pouvez remplir le formulaire pour faire une demande:
+               - Soit vous êtes développeur et vous recherchez une squad;
+               - Soit vous êtes une squad et vous cherchez un développeur.
+           </p>
+           <section>
+               <form action="traitement" method="POST">
+                   <label for="name">Nom :</label>
+                   <input type="text" id="name" name="userName" placeholder="Votre pseudo">
+                   <label for="email">Email :</label>
+                   <input type="email" id="email" name="userMail" placeholder="email de contact">
+                   <label for="choice">
+                       <select name="choice" id="choice">
+                            <option value="">Selection</option>
+                            <option value="join">Rejoindre une Squad</option>
+                            <option value="search">Chercher un développeur</option>
+                       </select>
+                   </label>
+                   <label for="message">Message: </label>
+                   <textarea id="msg" placeholder="Décrivez vous !"></textarea>
+                   <button>Soummettre !</button>
+               </form>
+           </section>
+        </div>
+        </template>
+        <template id="backend">
+            <div class="emptyTest">
+           <h4>BACK-END</h4>
+           <p>
+               Tout ce qui concerne le dév back.
+               Vous pouvez remplir le formulaire pour faire une demande:
+               - Soit vous êtes développeur et vous recherchez une squad;
+               - Soit vous êtes une squad et vous cherchez un développeur.
+           </p>
+           <section>
+               <form action="traitement" method="POST">
+                   <label for="name">Nom :</label>
+                   <input type="text" id="name" name="userName" placeholder="Votre pseudo">
+                   <label for="email">Email :</label>
+                   <input type="email" id="email" name="userMail" placeholder="email de contact">
+                   <label for="choice">
+                       <select name="choice" id="choice">
+                            <option value="">Selection</option>
+                            <option value="join">Rejoindre une Squad</option>
+                            <option value="search">Chercher un développeur</option>
+                       </select>
+                   </label>
+                   <label for="message">Message: </label>
+                   <textarea id="msg" placeholder="Décrivez vous !"></textarea>
+                   <button>Soummettre !</button>
+               </form>
+           </section>
+        </div>
+        </template>
+        <template id="database">
+            <div class="emptyTest">
+           <h4>BACK-END</h4>
+           <p>
+               Tout ce qui concerne les bases de données.
+               Vous pouvez remplir le formulaire pour faire une demande:
+               - Soit vous êtes développeur et vous recherchez une squad;
+               - Soit vous êtes une squad et vous cherchez un développeur.
+           </p>
+           <section>
+               <form action="traitement" method="POST">
+                   <label for="name">Nom :</label>
+                   <input type="text" id="name" name="userName" placeholder="Votre pseudo">
+                   <label for="email">Email :</label>
+                   <input type="email" id="email" name="userMail" placeholder="email de contact">
+                   <label for="choice">
+                       <select name="choice" id="choice">
+                            <option value="">Selection</option>
+                            <option value="join">Rejoindre une Squad</option>
+                            <option value="search">Chercher un développeur</option>
+                       </select>
+                   </label>
+                   <label for="message">Message: </label>
+                   <textarea id="msg" placeholder="Décrivez vous !"></textarea>
+                   <button>Soummettre !</button>
+               </form>
+           </section>
+        </div>
+        </template>
+    </div>
+        <script src="js/app.js"></script>
+ </body>
+
+</html>
