@@ -9,6 +9,11 @@ class MainController extends CoreController
         $this->show('index');
     }
 
+    public function web()
+    {
+        $this->show('web');
+    }
+
     public function error404()
     {
         echo '404';
