@@ -9,23 +9,56 @@ let app = {
         let back = document.getElementById('back');
         back.addEventListener('click', app.handleClickBack);
 
-        let bdd = document.getElementById('bdd');
+        let bdd = document.getElementById('database');
         bdd.addEventListener('click', app.handleClickDatabase);
     },
 
     handleClickFront: function(event)
     {
-        console.log("front-end");
+        event.preventDefault();
+
+        let template = document.getElementById('frontend');
+        let article  = document.getElementById('articleFront');
+        let screenOn = document.querySelector('#articleFront .emptyZone');
+
+        if (screenOn == null) {
+            let clone = document.importNode(template.content, true);
+            article.appendChild(clone);
+        } else {
+            alert("Vous y êtes déjà !");
+        }
     },
 
     handleClickBack: function(event)
     {
-        console.log("back-end");
+        event.preventDefault();
+
+        let template = document.getElementById('backend');
+        let article  = document.getElementById('articleBack');
+        let screenOn = document.querySelector('#articleBack .emptyZone');
+
+        if (screenOn == null) {
+            let clone = document.importNode(template.content, true);
+            article.appendChild(clone);
+        } else {
+            alert("Vous y êtes déjà !");
+        }
     },
 
     handleClickDatabase: function(event)
     {
-        console.log("sql");
+        event.preventDefault();
+
+        let template = document.getElementById('bdd');
+        let article  = document.getElementById('articleBdd');
+        let screenOn = document.querySelector('#articleBdd .emptyZone');
+
+        if (screenOn == null) {
+            let clone = document.importNode(template.content, true);
+            article.appendChild(clone);
+        } else {
+            alert("Vous y êtes déjà !");
+        }
     }
 
 };

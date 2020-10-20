@@ -150,3 +150,90 @@ li
     font-size: 1.6em;
     padding-bottom: 12px;
 }
+
+.mainWeb
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainWeb h3
+{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.sectionWeb
+{
+    text-align: center;
+    padding: 25px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionWeb button
+{
+    padding: 8px;
+    font-weight: bold;
+    box-shadow: 8px 8px 12px #aaaaaa;
+    border-radius: 10px;
+}
+
+h5
+{
+    text-align: center;
+}
+
+.formulaire
+{
+    /*text-align: center;*/
+    border: blue 2px solid;
+    border-radius: 15px;
+    width: 30%;
+    height: 550px;
+    margin: auto;
+    background-color: black;
+    box-shadow: 8px 8px 12px blue;
+    color: green;
+    font-weight: bold;
+    padding: 16px 25px;
+    margin-bottom: 100px;
+}
+
+.formulaire .entry
+{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.formulaire input
+{
+    background-image: linear-gradient(to bottom right, #888, #eee);
+    box-shadow: 1px 1px 1px white,
+              inset 2px 3px 5px rgba(0,0,0,0.3),
+              inset -2px -3px 5px rgba(255,255,255,0.5);
+    border-radius: 10px;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.formulaire textarea
+{
+    width: 270px;
+    margin-top: 8px;
+}
+
+.formulaire select
+{
+    width: 270px;
+    font-size: 1.2em;
+}
+
+.formulaire .submit
+{
+    width: 270px;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+}

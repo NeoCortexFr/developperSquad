@@ -35,19 +35,107 @@
             <section class="sectionWeb">
                 <button id="front">Partie FRONT-END</button>
                 <button id="back">Partie BACK-END</button>
-                <button id="bdd">Partie DataBase</button>
+                <button id="database">Partie DataBase</button>
             </section>
-            <article id="article">
+            <article id="articleFront">
+
+            </article>
+            <article id="articleBack">
+
+            </article>
+            <article id="articleBdd">
 
             </article>
         </main>
-        <template class="testLorem">
+        <template id="frontend">
+            <div class="emptyZone">
+                
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident possimus accusantium, iure ea ullam excepturi nam quibusdam? Illum quibusdam ducimus soluta consequatur impedit molestias quas nemo ipsa, quaerat eos architecto!
-                Suscipit ea ullam animi rerum laborum, natus in dolorem, dolor iure veniam voluptas voluptatum? Delectus exercitationem nesciunt expedita minima alias explicabo, vel nisi optio ducimus eveniet, ullam, porro praesentium obcaecati!
-                Labore ipsum laudantium ipsa praesentium voluptatibus provident dolore sed voluptate accusamus eaque repellat saepe, atque natus? Minima voluptas eaque, perferendis cumque in cum. Excepturi molestias numquam iusto, ipsa molestiae necessitatibus.
-                Harum nobis praesentium mollitia ad nesciunt quo facilis provident sed fugit doloribus, recusandae ipsum quaerat reiciendis animi! Cum distinctio rerum, modi magni illum dicta mollitia maiores quasi! Sequi, impedit alias?
+                <form method="POST" action="" class="formulaire">
+                        <h5>FRONT-END</h5>
+                    <div class="entry">
+                        <label for="name">Nom / Pseudo:</label><br>
+                        <input type="text" id="name" name="user_name" />
+                    </div>
+                    <div class="entry">
+                        <label for="mail">E-mail:</label><br>
+                        <input type="email" id="email" name="user_mail" />
+                    </div>
+                    <div class="entry">
+                        <label for="git">Github</label><br>
+                        <input type="url" id="git" name="user_git" />
+                    </div>
+                    
+                    <div class="entry">
+                        <label for="msg">Une p'tite description:</label><br>
+                        <textarea id="msg" name="user_msg" rows="6" cols="33"></textarea>
+                    </div>
+                    <div class="entry">
+                        <button type="submit" id="submit" class="submit">Envoyer votre demande</button>
+                    </div>
+                </form>
             </p>
+        </div>
+        </template>
+        <template id="backend">
+            <div class="emptyZone">
+               
+            <p>
+                <form method="POST" action="" class="formulaire">
+                        <h5>BACK-END</h5>
+                     <div class="entry">
+                        <label for="name">Nom / Pseudo:</label><br>
+                        <input type="text" id="name" name="user_name" />
+                    </div>
+                    <div class="entry">
+                        <label for="mail">E-mail:</label><br>
+                        <input type="email" id="email" name="user_mail" />
+                    </div>
+                    <div class="entry">
+                        <label for="git">Github</label><br>
+                        <input type="url" id="git" name="user_git" />
+                    </div>
+                    
+                    <div class="entry">
+                        <label for="msg">Une p'tite description:</label><br>
+                        <textarea id="msg" name="user_msg" rows="6" cols="33"></textarea>
+                    </div>
+                    <div class="entry">
+                        <button type="submit" id="submit" class="submit">Envoyer votre demande</button>
+                    </div>
+                </form>
+            </p>
+        </div>
+        </template>
+        <template id="bdd">
+            <div class="emptyZone">
+               
+            <p>
+                <form method="POST" action="" class="formulaire">
+                        <h5>DATABASE</h5>
+                     <div class="entry">
+                        <label for="name">Nom / Pseudo:</label><br>
+                        <input type="text" id="name" name="user_name" />
+                    </div>
+                    <div class="entry">
+                        <label for="mail">E-mail:</label><br>
+                        <input type="email" id="email" name="user_mail" />
+                    </div>
+                    <div class="entry">
+                        <label for="git">Github</label><br>
+                        <input type="url" id="git" name="user_git" />
+                    </div>
+                    
+                    <div class="entry">
+                        <label for="msg">Une p'tite description:</label><br>
+                        <textarea id="msg" name="user_msg" rows="6" cols="33"></textarea>
+                    </div>
+                    <div class="entry">
+                        <button type="submit" id="submit" class="submit">Envoyer votre demande</button>
+                    </div>
+                </form>
+            </p>
+        </div>
         </template>
     </div>
         <script src="../js/app.js"></script>
